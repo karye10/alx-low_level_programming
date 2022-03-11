@@ -28,6 +28,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n);
+	putchar('\n');
 	retutn (0);
 }
