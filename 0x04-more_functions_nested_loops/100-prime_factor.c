@@ -27,7 +27,6 @@ int main(void)
 		{
 			max = i;
 			n = n / i;
-
 		}
 	}
 
