@@ -1,6 +1,6 @@
 #include "main.h"
 
-int bandersnath(char *s1, char *s2);
+int bandersnatch(char *s1, char *s2);
 char *move(char *s2);
 
 /**
