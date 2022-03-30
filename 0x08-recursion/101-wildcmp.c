@@ -15,6 +15,11 @@ char *move(char *s2);
 int wildcmp(char *s1, char *s2)
 {
 	/**
+	 * this is going to be a sum of return values
+	 */
+	int sum = 0;
+
+	/**
 	 * if we reach the end of s1 and the char in s2 is a *
 	 * and if the next chars of s2 are *, return 1
 	 */
@@ -54,7 +59,7 @@ int wildcmp(char *s1, char *s2)
 		if (*s2 == '\0')
 			return (1);
 		if (*s1 == *s2)
-			sum += wildcmp(s! + 1, s2 + 1);
+			sum += wildcmp(s1 + 1, s2 + 1);
 		sum += bandersnatch(s1 + 1, s2);
 		return (!!sum);
 	}
@@ -62,9 +67,9 @@ int wildcmp(char *s1, char *s2)
 }
 
 /**
- * bandersnatch - checkes recursively for all the paths when the 
+ * bandersnatch - checkes recursively for all the paths when the
  * characters are equal
- * @s: first string
+ * @s1: first string
  * @s2: second string
  *
  * Return: return value of wildcmp() or of itself
